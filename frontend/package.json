@@ -10,6 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@stacks/connect": "^8.2.3",
+    "@stacks/transactions": "^7.3.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0"
   },
