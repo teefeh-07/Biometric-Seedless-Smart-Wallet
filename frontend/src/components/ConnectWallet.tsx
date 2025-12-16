@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { showConnect } from '@stacks/connect';
 import { userSession } from '../utils/auth';
 

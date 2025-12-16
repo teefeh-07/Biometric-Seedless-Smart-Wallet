@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { openContractCall } from '@stacks/connect';
 import { bufferCV } from '@stacks/transactions';
 import { userSession } from '../utils/auth';
