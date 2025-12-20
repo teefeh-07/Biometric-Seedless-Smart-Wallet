@@ -1,4 +1,4 @@
-import { StacksTestnet, StacksMainnet } from '@stacks/network';
+import { STACKS_TESTNET, STACKS_MAINNET } from '@stacks/network';
 import {
     AnchorMode,
     PostConditionMode,
@@ -9,5 +9,5 @@ import {
 } from '@stacks/transactions';
 
 export const getNetwork = (isMainnet: boolean = false) => {
-    return isMainnet ? new StacksMainnet() : new StacksTestnet();
+    return isMainnet ? STACKS_MAINNET : STACKS_TESTNET;
 };
