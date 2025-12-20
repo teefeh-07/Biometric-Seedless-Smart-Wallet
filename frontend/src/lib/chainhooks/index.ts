@@ -1,1 +1,1 @@
-// Chainhooks Client
+import { ChainhooksClient } from '@hirosystems/chainhooks-client';
