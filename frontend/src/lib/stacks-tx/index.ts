@@ -1,5 +1,5 @@
 import { STACKS_TESTNET, STACKS_MAINNET } from '@stacks/network';
-export {
+import {
     AnchorMode,
     PostConditionMode,
     makeContractCall,
@@ -7,6 +7,15 @@ export {
     Pc,
     FungibleConditionCode,
 } from '@stacks/transactions';
+
+export {
+    AnchorMode,
+    PostConditionMode,
+    makeContractCall,
+    broadcastTransaction,
+    Pc,
+    FungibleConditionCode,
+};
 
 export const getNetwork = (isMainnet: boolean = false) => {
     return isMainnet ? STACKS_MAINNET : STACKS_TESTNET;
