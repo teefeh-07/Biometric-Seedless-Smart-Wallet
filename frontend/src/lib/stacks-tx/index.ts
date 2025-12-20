@@ -5,3 +5,7 @@ import {
     makeContractCall,
     broadcastTransaction,
 } from '@stacks/transactions';
+
+export const getNetwork = (isMainnet: boolean = false) => {
+    return isMainnet ? new StacksMainnet() : new StacksTestnet();
+};
