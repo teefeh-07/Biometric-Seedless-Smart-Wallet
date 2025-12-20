@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
-import { showConnect } from '@stacks/connect';
-import { userSession } from '../utils/auth';
+import { userSession, authenticate } from '../lib/stacks-auth';
 
 // Configure the app with permissions
 // Removed local appConfig
@@ -11,18 +10,7 @@ const ConnectWallet = () => {
     const [userData, setUserData] = useState<any>(null);
 
     const handleConnect = () => {
-        showConnect({
-            appDetails: {
-                name: 'Biometric Smart Wallet',
-                icon: window.location.origin + '/vite.svg',
-            },
-            redirectTo: '/',
-            onFinish: () => {
-                const userData = userSession.loadUserData();
-                setUserData(userData);
-            },
-            userSession: userSession,
-        });
+        authenticate();
     };
 
     const handleSignOut = () => {

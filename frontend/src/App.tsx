@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import ConnectWallet from './components/ConnectWallet'
 import InitializeWallet from './components/InitializeWallet'
+import { TransactionSender } from './components/TransactionSender'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -23,6 +24,7 @@ function App() {
       <div className="card">
         <ConnectWallet />
         <InitializeWallet />
+        <TransactionSender />
       </div>
 
       <div className="card">
