@@ -1,1 +1,1 @@
-import { AppConfig, UserSession } from '@stacks/connect';
+import { AppConfig, UserSession, showConnect } from '@stacks/connect';
