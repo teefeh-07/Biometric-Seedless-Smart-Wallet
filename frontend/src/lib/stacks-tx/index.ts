@@ -4,7 +4,7 @@ import {
     PostConditionMode,
     makeContractCall,
     broadcastTransaction,
-    makeStandardSTXPostCondition,
+    Pc,
     FungibleConditionCode,
 } from '@stacks/transactions';
 
