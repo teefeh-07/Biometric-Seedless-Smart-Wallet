@@ -5,6 +5,9 @@ export type ObserverConfig = {
     url: string;
 };
 
-export const createObserver = () => {
-    // Logic placeholder
+export const createObserver = (config: ObserverConfig) => {
+    return {
+        name: config.name,
+        url: config.url
+    };
 };
